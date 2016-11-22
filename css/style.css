@@ -1,62 +1,164 @@
-.navbar {
-border: none; 
-display: inline-table; 
-width: 100%; 
-border-radius:0; 
-position: fixed; 
-top: 0; z-index: 
-10; border-bottom: 
-1px solid rgba(255,255,255,.15) 
-}
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900);
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
 
-nav .container { 
-display: table-cell; 
-height: 75px; 
-position: relative; 
-vertical-align: middle; 
-}
+/*************************************
+    Aesthetics
+**************************************/
 
-nav.shrink .container {
-height: 60px;
-}
+/*headings*/
 
-.sidebar-nav { 
-width: 250px; height: 100%
-}
 
-.sidebar-nav .navbar-header {
-background: none
-}
+h1, h2, h3, h4, h5, h6 { text-transform: uppercase; margin:0; padding:0; color: #000; }
+h1 { font-size:45px; line-height: 45px; line-height: 50px}
+h2 { font-size:40px; line-height:45px}
+h3 { font-size:35px; line-height:40px}
+h4 { font-size:25px; line-height:30px}
+h5 { font-size:20px; line-height:25px}
+h6 { font-size:18px; line-height:23px}
 
-.sidebar-nav .navbar-nav li {
-width: 100%; 
-padding: 15px 0; 
-border-bottom: 1px solid rgba(0,0,0,.1); 
-margin: 0
-}
+.title-sideline:before { border-bottom: 4px solid #ef106e; content: ""; left: -15px; position: absolute; top: 15px; width: 12px; }
 
-.sidebar-nav .navbar-nav li:last-child {
-border-bottom: none
-}
+body{ font-family: 'Roboto', sans-serif; -webkit-font-smoothing: antialiased;  font-smoothing: antialiased; font-size:13px; color:#626262; line-height:23px; letter-spacing: 0.02em }
+a, a:active{ color: #626262; text-decoration: none; }
+ul{ margin: 0px; padding:0px; }
 
-.sidebar-nav .navbar-nav li a {
-color: #000 !important; 
-padding: 0 0 0 15px !important; 
-font-weight: 600; 
-border-bottom: none
-}
 
-.sidebar-nav .navbar-nav li a:before { 
-content: ""; 
-left: -1px; 
-position: absolute; 
-top: 9px; 
-border-bottom: 2px solid #ef106e; 
-width: 6px; 
-transition-duration: .6s;
-}
+/*text sizes*/
+.title-medium{ font-size:24px !important; line-height:28px !important;}
+.title-large{ font-size:28px !important; line-height:34px !important;}
+.title-extra-large{ font-size:35px !important; line-height:37px !important;}
+.title-extra-large-2{ font-size:45px !important; line-height:45px !important;}
+.title-extra-large-3{ font-size:50px !important; line-height:50px !important;}
+.title-extra-large-4{ font-size:70px !important; line-height:70px !important;}
+.title-extra-large-5{ font-size:80px !important; line-height:50px !important;}
+.title-big { font-size: 100px !important; line-height:100px !important;}
+.title-big2 { font-size: 125px !important; line-height:125px !important;}
+.title-big3 { font-size: 150px !important; line-height:150px !important;}
 
-.sidebar-nav .navbar-nav li a:hover:before, .sidebar-nav .navbar-nav li.active a:before {
-width: 130px; 
-border-bottom: 1px solid #ef106e;
-}
+
+/*font family*/
+.alt-font {font-family: 'Montserrat', sans-serif !important;}
+.main-font {font-family: 'Roboto', sans-serif !important;}
+
+
+/*************************************
+    Navbar Color Lock
+**************************************/
+
+.bg-white{ background: #fff !important;}
+
+
+/*************************************
+    Background Image Fixtures
+**************************************/
+
+.parallax-fix{ position: relative; background-size: cover !important; overflow: hidden; background-position: center center; background-repeat: no-repeat !important; transition-duration: .2s; -o-transition-duration: .2s; transition-timing-function: ease-in; -moz-transition-timing-function: ease-in; -webkit-transition-timing-function: ease-in; -o-transition-timing-function: ease-in; background-attachment: fixed !important }
+.fix-background{ position: relative;  background-size: cover !important; overflow: hidden; background-position: center center; background-repeat: no-repeat !important; background-attachment: fixed !important}
+.cover-background{ position: relative; background-size: cover !important; overflow: hidden; background-position: center center !important; background-repeat: no-repeat !important;}
+.background-size-inherit {background-size: inherit !important}
+.background-attachment-inherit {background-attachment: inherit !important}
+.background-position-left {background-position: left center !important;}
+.background-position-right {background-position: right center !important;}
+.background-position-top {background-position: right top !important;}
+
+/*************************************
+    Custom
+**************************************/
+
+/*custom margins*/
+.margin-one-half{margin:0.5% !important}
+.margin-one{margin:1% !important}
+.margin-two{margin:1.5% !important}
+.margin-three{margin:2% !important}
+.margin-four{margin:2.5% !important}
+.margin-five{margin:3% !important}
+.margin-six{margin:3.5% !important}
+.margin-seven{margin:4% !important}
+.margin-eight {margin:4.5% !important}
+.margin-nine {margin:5% !important}
+.margin-ten{ margin:5.5% !important}
+.margin-eleven{ margin:6% !important}
+.margin-twelve{ margin:6.5% !important}
+.margin-thirteen{ margin:7% !important}
+.margin-fourteen{ margin:7.5% !important}
+.margin-fifteen{ margin:8% !important}
+.margin-sixteen{ margin:8.5% !important}
+.margin-seventeen{ margin:9% !important}
+.margin-eighteen{ margin:9.5% !important}
+.margin-nineteen{ margin:10% !important}
+.margin-twenty{ margin:10.5% !important}
+.margin-twenty-one{ margin:11% !important}
+.margin-twenty-two{ margin:11.5% !important}
+.margin-twenty-three{ margin:12% !important}
+.margin-twenty-four{ margin:12.5% !important}
+.margin-twenty-five{ margin:13% !important}
+.margin-twenty-six{ margin:13.5% !important}
+.margin-twenty-seven{ margin:14% !important}
+.margin-twenty-eight{ margin:14.5% !important}
+.margin-twenty-nine{ margin:15% !important}
+.margin-thirty{ margin:15.5% !important}
+.margin-thirty-one{margin:16% !important}
+.margin-thirty-two{margin:16.5% !important}
+.margin-thirty-three{margin:17% !important}
+.margin-thirty-four{margin:17.5% !important}
+.margin-thirty-five{margin:18% !important}
+.no-margin{ margin:0 !important}
+.no-margin-lr{ margin-left: 0 !important; margin-right: 0 !important}
+.no-margin-tb{ margin-top: 0 !important; margin-bottom: 0 !important}
+.no-margin-top{ margin-top:0 !important}
+.no-margin-bottom{ margin-bottom:0 !important}
+.no-margin-left{ margin-left:0 !important}
+.no-margin-right{ margin-right:0 !important}
+.margin-lr-auto {margin-left:auto !important; margin-right:auto !important}
+
+/*custom heights*/
+.height-100 { height: 100% !important}
+.height-auto { height:auto !important}
+
+.clear-both{ clear:both}
+.vertical-align-middle { vertical-align: middle !important;}
+.vertical-middle { -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%); position: absolute; top: 50%; left:0; right: 0}
+.vertical-align-top { vertical-align: top !important;}
+.line-break { display:block !important;}
+.z-index-1 {z-index:1 !important;}
+.z-index-0 {z-index:0 !important;}
+.z-index-minus2 {z-index:-2 !important;}
+.no-transition *, .owl-carousel *, .mfp-container * { transition-timing-function: none; -moz-transition-timing-function: none; -webkit-transition-timing-function: none; -o-transition-timing-function: none; transition-duration: 0s; -moz-transition-duration: 0s; -webkit-transition-duration: 0s; -o-transition-duration: 0s; }
+section { padding: 130px 0; }
+.button-bg-area{padding: 80px 0;}
+
+
+/*************************************
+    Navigation
+**************************************/
+
+#header {z-index: 5}
+.navbar {border: none; display: inline-table; width: 100%; border-radius:0; position: fixed; top: 0; z-index: 10; border-bottom: 1px solid rgba(255,255,255,.15) }
+nav .container { display: table-cell; height: 75px; position: relative; vertical-align: middle; }
+.navbar-header {background: url("../images/logo-border.png") right no-repeat}
+nav.shrink .container {height: 60px;}
+.header-right { margin: 13px 0 0; }
+.navbar-nav a { font-size: 12px; text-transform: uppercase; color: #fff !important; padding:0 !important; font-weight: 500}
+.navbar-nav a:hover { color: #cacaca !important; background: transparent !important}
+.navbar-nav a:focus {color: #fff !important; background: transparent !important}
+.nav li {margin: 15px 20px}
+.sticky-wrapper {position: absolute; top: 0; width: 100%}
+.navbar-brand img {position: relative; top: -5px; z-index: 2; max-width: 156px;}
+nav.shrink {background: rgba(0,0,0,1); border: none !important}
+.transparent-header.shrink {background: rgba(0,0,0,.7); border: none !important}
+nav.navbar-height{  height: 100px !important;}
+nav.navbar-height.shrink {height: 50px !important;}
+.navbar li.active a { border-bottom: 1px solid #fff}
+
+
+.sidebar-nav { width: 250px; height: 100%}
+.sidebar-nav .navbar-header {background: none}
+nav.sidebar-nav .container { vertical-align: top; padding:60px 40px }
+.sidebar-nav .navbar-nav li {width: 100%; padding: 15px 0; border-bottom: 1px solid rgba(0,0,0,.1); margin: 0}
+.sidebar-nav .navbar-nav li:last-child {border-bottom: none}
+.sidebar-nav .navbar-nav li a {color: #000 !important; padding: 0 0 0 15px !important; font-weight: 600; border-bottom: none}
+.sidebar-nav .navbar-nav li a:before { content: ""; left: -1px; position: absolute; top: 9px; border-bottom: 2px solid #ef106e; width: 6px; transition-duration: .2s; -moz-transition-duration: .2s; -webkit-transition-duration: .2s; -o-transition-duration: .2s;}
+.sidebar-nav .navbar-nav li a:hover:before, .sidebar-nav .navbar-nav li.active a:before {width: 130px; border-bottom: 1px solid #ef106e;}
+.sidebar-wrapper {padding-left:250px }
+.sidebar-nav .footer-social i { font-size: 14px;}
+.sidebar-nav .footer-social a { margin: 0 10px;}
