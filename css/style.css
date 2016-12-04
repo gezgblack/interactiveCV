@@ -18,7 +18,7 @@ h6 { font-size:18px; line-height:23px}
 
 .title-sideline:before { border-bottom: 4px solid #009966; content: ""; left: -15px; position: absolute; top: 15px; width: 12px; }
 
-body{ font-family: 'Roboto', sans-serif; -webkit-font-smoothing: antialiased;  font-smoothing: antialiased; font-size:13px; line-height:23px; letter-spacing: 0.02em }
+body{ font-family: 'Roboto', sans-serif; -webkit-font-smoothing: antialiased;  font-smoothing: antialiased; color: #000; font-size:13px; line-height:23px; letter-spacing: 0.02em }
 a, a:active{ color: #00a651; text-decoration: none; }
 ul{ margin: 0px; padding:0px; }
 
@@ -193,5 +193,20 @@ ol.service_details > li { list-style:decimal; }
 .te-green:before { background-color: #00a651;}
 .event-date { font-weight: 500; font-size: 11px; margin-bottom: 20px;}
 .event-name { font-weight: 500; font-size: 14px;}
-.event-description { font-size: 11px; color: #fff;}
-	
+.event-description { font-size: 11px; color: #000;}
+
+.accordion { margin:5px 0 45px 0; border-top:1px dotted #c0c0c0; }
+section.grey .accordion { border-top:0 }
+
+.tab { background:#fff; background-size:28px 16px; border-bottom:1px dotted #c0c0c0; margin-bottom:0px; position:relative }
+.tab-arrow { background:url(../images/down-arrow.png) no-repeat; background-size:28px 16px; width:48px; height:48px; position:absolute; right:30px; top:50px; display:block; opacity:0; -webkit-transition: opacity 0.2s ease 0s; transition: opacity 0.2s ease 0s; }
+.tab.closed:hover .tab-arrow, .tab.open .tab-arrow { opacity:1; -webkit-transition: opacity 0.2s ease 0s; transition: opacity 0.2s ease 0s; }
+.tab.closed { cursor:pointer }
+
+.col1-1 { width:940px; margin:0px 10px; float:none; position:relative; }
+
+.time-range { width:260px; float:left; margin-right:20px; font-size:21px; font-weight:600; padding:40px; padding-right:0px; padding-top:45px; letter-spacing:-1px; text-transform:uppercase; height:100%; }
+.time-range span { font-size:13px; font-weight:400; padding-right:6px; letter-spacing:0; }
+.employer { width:660px; padding:14px 60px 7px 40px; border-left:1px dotted #c0c0c0; margin:25px 0; float:left }
+.employer h4 { margin-bottom:8px; margin-top:0px; font-size:28px; text-transform:none; letter-spacing:0; font-weight:600 }
+.employer h5 small { font-size:13px; font-weight:400; font-family: "Open Sans", Arial, Helvetica, sans-serif; }
