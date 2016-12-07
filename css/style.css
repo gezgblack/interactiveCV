@@ -21,6 +21,11 @@ h6 { font-size:18px; line-height:23px}
 body{ font-family: 'Roboto', sans-serif; -webkit-font-smoothing: antialiased;  font-smoothing: antialiased; color: #000; font-size:13px; line-height:23px; letter-spacing: 0.02em }
 a, a:active{ color: #00a651; text-decoration: none; }
 ul{ margin: 0px; padding:0px; }
+input, textarea, select{ border: 1px solid #dfdfdf; letter-spacing: 1px; font-size: 11px;  padding: 8px 15px; width: 100%; margin: 0 0 20px 0; max-width: 100%; resize: none;}
+input[type="submit"] { width: auto}
+input[type="button"], input[type="text"], input[type="email"], input[type="search"], input[type="password"], textarea, input[type="submit"] { -webkit-appearance: none;  border-radius: 0; }
+input:focus, textarea:focus{ border: 1px solid #989898; outline: none; }
+input[type="submit"]:focus { border:none !important}
 
 i { color: #9a9a9a; margin:0}
 .icon-medium { font-size:40px !important; margin-bottom: 15px !important; }
@@ -211,13 +216,6 @@ section.grey .accordion { border-top:0 }
 .employer h4 { margin-bottom:8px; margin-top:0px; font-size:28px; text-transform:none; letter-spacing:0; font-weight:600 }
 .employer h5 small { font-size:13px; font-weight:400; font-family: "Open Sans", Arial, Helvetica, sans-serif; }
 
-
-
-
-/****************************************************************************************/
-
-
-
 /* ===================================
     Portfolio
 ====================================== */
@@ -261,5 +259,8 @@ ul.portfolio-filter-tab-style-5 { border-bottom: none;}
 .gutter-medium .grid-gallery ul { margin-left: -22px}
 .gutter-medium .grid li { padding: 0 0 22px 22px;}
 
+#success {clear: both;margin: 0 15px 20px;text-align: center;background-color: #fff;border: 2px solid #6dc13a;color: #1a940a;padding: 10px 0;font-family: 'Montserrat', sans-serif;display: none;}
+#success-contact { clear: both; margin: 0 15px 20px; text-align: center; background-color: #fff; border: 2px solid #6dc13a; color: #1a940a;  padding: 10px 0; font-family: 'Montserrat', sans-serif; display: none}
 
-
+.required { display: block; font-size: 11px; letter-spacing: 1px; text-transform: uppercase; }
+.required-error { border: 2px solid rgba(204, 0, 0,1) !important;}
