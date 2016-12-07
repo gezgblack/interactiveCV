@@ -688,7 +688,7 @@
     
     /* personal */
     .personal .container { width: 100% !important;}
-    .personal-about::after { background-color: #fff; content: ""; height: 100%; left: 0; opacity: 1; position: absolute; top: 0; width: 100%; z-index: 0;}
+    .personal-about::after { background-color: #fff; height: 100%; left: 0; opacity: 1; position: absolute; top: 0; width: 100%; z-index: 0;}
     .personal-about .container {position: relative; z-index: 1;}
     .personal section { padding: 100px 0;}
     
