@@ -210,3 +210,56 @@ section.grey .accordion { border-top:0 }
 .employer { width:660px; padding:14px 60px 7px 40px; border-left:1px dotted #c0c0c0; margin:25px 0; float:left }
 .employer h4 { margin-bottom:8px; margin-top:0px; font-size:28px; text-transform:none; letter-spacing:0; font-weight:600 }
 .employer h5 small { font-size:13px; font-weight:400; font-family: "Open Sans", Arial, Helvetica, sans-serif; }
+
+
+
+
+/****************************************************************************************/
+
+
+
+/* ===================================
+    Portfolio
+====================================== */
+
+.portfolio-filter-tab li {margin: 0 20px !important; display: inline-block; float: inherit}
+.portfolio-filter-tab li:last-child { margin-right: 0}
+.portfolio-filter-tab li:first-child { margin-left: 0}
+.portfolio-filter-tab li a {border: none !important; padding: 0; border-radius:0; padding: 5px 10px 3px 10px}
+.portfolio-filter-tab li a:hover, .portfolio-filter-tab li:active, .portfolio-filter-tab li.active a {border: none; background-color: #fdd947 !important; color: #000 !important}
+
+
+ul.portfolio-filter-tab-style-5 { border-bottom: none;}
+.portfolio-filter-tab-style-5 li { margin: 0; display: table; float: inherit; position: relative; top:1px;}
+.portfolio-filter-tab-style-5 li:last-child {margin:0 !important }
+.portfolio-filter-tab-style-5 li:first-child {margin:0 !important } 
+.portfolio-filter-tab-style-5 li a {border: none !important; background: transparent !important; padding: 10px 21px 10px 0; border-radius:0; color: #9b9b9b}
+.portfolio-filter-tab-style-5 li a:hover {color: #000}
+.portfolio-filter-tab-style-5 li.active a:before {border-bottom: 1px solid #00a651; content: ""; width: 100%; position: absolute; z-index: -1; left: 0; top: 18px; color: #000 }
+.portfolio-filter-tab-style-5 li.active a {padding-left: 15px; color: #000}
+
+.grid li  {transition-duration: 0s; -moz-transition-duration: 0s; -webkit-transition-duration: 0s; -o-transition-duration: 0s;}
+.grid img { width:100%}
+.grid-gallery { clear: both; float: left; width: 100%; }
+.gallery-img a { position: relative; z-index: 2; display: block}
+.grid-gallery ul { list-style: none; padding: 0; }
+.grid-gallery figure { margin: 0; position: relative }
+.grid-gallery figure img { display: block; width: 100%; opacity: 1; cursor: pointer; }
+.grid-gallery figcaption h3 { margin: 0 0 8px; padding:0; text-transform:uppercase; }
+.grid-gallery figcaption i { font-size: 32px; color: #aeaeae; margin-bottom: 20px}
+.grid { margin: 0 auto; }
+.grid li { box-sizing: border-box; float: left; margin: 0; display: inline-table;  }
+.gallery-img { opacity: 1; transition: all 0.3s ease 0s; overflow: hidden; }
+.grid figure:hover img { -ms-transform: scale(1.1,1.1); -webkit-transform: scale(1.1,1.1);  transform: scale(1.1,1.1); transition: all .3s ease; -webkit-transition: all .3s ease; -moz-transition: all .3s ease; opacity:0.15;}
+.grid figure:hover figcaption { opacity: 1; transition: all .3s ease; -webkit-transition: all .3s ease; -moz-transition: all .3s ease;}
+.grid-style1 .grid figure { -webkit-transition: opacity 0.2s; transition: opacity 0.2s; }
+.grid-style1 .grid figcaption {  opacity: 0; text-align: center; height: calc(100% - 60px); width: calc(100% - 60px); left: 30px; top: 30px;  position: absolute; background: #fff }
+.grid-style1 .grid figcaption h3 { font-size: 18px; line-height: 25px; margin: 0; width: 100%; padding: 0 15px; text-align: center; top: 50%; -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%); position: relative}
+.grid-style1 .grid figcaption h3 span {margin-top: 5px;}
+.grid-style1-border {  border: 8px solid #fdd947; height: calc(100% - 40px); width: calc(100% - 40px); left: 20px; top: 20px;  position: absolute; }
+.work-2col .grid li { float: left; width: 50%;}
+.gutter-medium .grid-gallery ul { margin-left: -22px}
+.gutter-medium .grid li { padding: 0 0 22px 22px;}
+
+
+
