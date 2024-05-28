@@ -2,27 +2,23 @@
 <html>
 	<head>
 <script type="text/javascript">
-!function(){var e=window.rudderanalytics=window.rudderanalytics||[];e.methods=["load","page","track","identify","alias","group","ready","reset","getAnonymousId","setAnonymousId","getUserId","getUserTraits","getGroupId","getGroupTraits","startSession","endSession","getSessionId","setAuthToken"],e.factory=function(t){return function(){e.push([t].concat(Array.prototype.slice.call(arguments)))}};for(var t=0;t<e.methods.length;t++){var r=e.methods[t];e[r]=e.factory(r)}e.loadJS=function(e,t){var r=document.createElement("script");r.type="text/javascript",r.async=!0,r.src="https://cdn.rudderlabs.com/beta/dmt/rudder-analytics.min.js";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(r,a)},e.loadJS(),
-e.load("2LY0AEtqan0prBX2836XNAv3G4U","https://rudderstacudgv.dataplane.rudderstack.com",{uaChTrackLevel: "full"}, {integrations: {
-    VWO: {
-      loadIntegration: true
-    }
-  }}),
-e.page()}();
+  !function(){"use strict";window.RudderSnippetVersion="3.0.3";var sdkBaseUrl="https://cdn.rudderlabs.com/v3"
+  ;var sdkName="rsa.min.js";var asyncScript=true;window.rudderAnalyticsBuildType="legacy",window.rudderanalytics=[]
+  ;var e=["setDefaultInstanceKey","load","ready","page","track","identify","alias","group","reset","setAnonymousId","startSession","endSession","consent"]
+  ;for(var n=0;n<e.length;n++){var t=e[n];window.rudderanalytics[t]=function(e){return function(){
+  window.rudderanalytics.push([e].concat(Array.prototype.slice.call(arguments)))}}(t)}try{
+  new Function('return import("")'),window.rudderAnalyticsBuildType="modern"}catch(a){}
+  if(window.rudderAnalyticsMount=function(){
+  "undefined"==typeof globalThis&&(Object.defineProperty(Object.prototype,"__globalThis_magic__",{get:function get(){
+  return this},configurable:true}),__globalThis_magic__.globalThis=__globalThis_magic__,
+  delete Object.prototype.__globalThis_magic__);var e=document.createElement("script")
+  ;e.src="".concat(sdkBaseUrl,"/").concat(window.rudderAnalyticsBuildType,"/").concat(sdkName),e.async=asyncScript,
+  document.head?document.head.appendChild(e):document.body.appendChild(e)
+  },"undefined"==typeof Promise||"undefined"==typeof globalThis){var d=document.createElement("script")
+  ;d.src="https://polyfill-fastly.io/v3/polyfill.min.js?version=3.111.0&features=Symbol%2CPromise&callback=rudderAnalyticsMount",
+  d.async=asyncScript,document.head?document.head.appendChild(d):document.body.appendChild(d)}else{
+  window.rudderAnalyticsMount()}window.rudderanalytics.load("2h67GX2KPYgBHIaZIonv1L1O2cV","https://rudderstacudgv.dataplane.rudderstack.com",{})}();
 </script>
-<!-- Start of Refiner code for logged-in web app users -->
-<script type="text/javascript">
-
-window._refinerQueue = window._refinerQueue || []; function _refiner(){_refinerQueue.push(arguments);} _refiner('setProject', '641ae8e0-e6c9-11ee-908e-131d354e87a9'); (function(){var a=document.createElement("script");a.type="text/javascript";a.async=!0;a.src="https://js.refiner.io/v001/client.js";var b=document.getElementsByTagName("script")[0];b.parentNode.insertBefore(a,b)})();
-
-_refiner('identifyUser', {
-    id: 'REPLACE-WITH-USER-ID', // Replace with your user ID
-    email: 'jane@example.com', // Replace with user Email
-    name: 'Jane Doe', // Replace with user name
-});
-
-</script>
-<!-- End of Refiner client code snippet -->
 		<!--HEAD-->
 		<meta http-equiv="Content-Type" content="text/html; charset-uft-8">
 			<title>Shamil Ataev Portfolio</title>
