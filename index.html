@@ -17,7 +17,10 @@
   },"undefined"==typeof Promise||"undefined"==typeof globalThis){var d=document.createElement("script")
   ;d.src="https://polyfill-fastly.io/v3/polyfill.min.js?version=3.111.0&features=Symbol%2CPromise&callback=rudderAnalyticsMount",
   d.async=asyncScript,document.head?document.head.appendChild(d):document.body.appendChild(d)}else{
-  window.rudderAnalyticsMount()}window.rudderanalytics.load("2LY0AEtqan0prBX2836XNAv3G4U","https://rudderstacudgv.dataplane.rudderstack.com",{})}();
+  window.rudderAnalyticsMount()}window.rudderanalytics.load("2LY0AEtqan0prBX2836XNAv3G4U","https://rudderstacudgv.dataplane.rudderstack.com",{integrations: {
+    All: true, // default true
+    Amplitude: false, // specify destination like Google Analytics, Amplitude etc.
+  }})}();
 </script>
 		<!--HEAD-->
 		<meta http-equiv="Content-Type" content="text/html; charset-uft-8">
