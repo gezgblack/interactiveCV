@@ -26,7 +26,18 @@
   ;var loadOptions={storage: {
     type: "none"
   }}
-  ;rudderanalytics.load("2ji3QN5N9TOXYl4m9navjwroABE","https://rudderstacudgv.dataplane.rudderstack.com",loadOptions)}}
+  ;rudderanalytics.load("2ji3QN5N9TOXYl4m9navjwroABE","https://rudderstacudgv.dataplane.rudderstack.com",{
+  consentManagement: {
+    enabled: true,
+    provider: "custom",
+  },
+  preConsent: {
+    enabled: true,
+    storage: {
+      strategy: "session", // Use session storage pre-consent
+    },
+  },
+});)}}
   }();
 </script>
 		<!--HEAD-->
